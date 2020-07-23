@@ -2,13 +2,8 @@
 
 namespace App\Http\Controllers;
 
-use App\User;
-use Illuminate\Http\Request; 
-use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\Crypt;
 use App\Http\Controllers\Controller;
 use Exception;
-use DB;
 
 class DecryptController extends Controller
 {
@@ -24,7 +19,7 @@ class DecryptController extends Controller
         $res = "";
         try
         {
-            $lokasi = 0;
+            $location = 0;
             $code = "1234567890";
 
             for ($i = 0; $i < strlen($value); $i++)
